@@ -1,0 +1,31 @@
+﻿CISC 3300 SP24
+Homework 1
+1.     What is HTML? What does it do?
+HTML is a markup language and it used to create and structure web pages. It defines the content and layout of a webpage by using elements such as headings, paragraphs, images, links, and forms.
+
+2.     Access https://www.fordham.edu/. In your own words, describe how this webpage uses structure to convey 
+meaning and navigation options to the user.
+Fordham University's homepage uses a clear structure to guide users with easy navigation options. It has a top navigation bar with links for students who are going to go to the school, current students, faculty, and staff, making it clear where to find relevant information. The page uses visual sections like "About," "Academics," and "Admissions," to organize content, while also offering quick links to important resources such as financial aid and student life. The layout is super organized and visually appealing, so that anyone, whether they are a full-time student or a first time newcomer, could navigate through the page easily.
+ 
+ 
+3. What is an HTML element? Tag? Attribute?              
+                                                  
+An HTML element is a basic building block of a webpage, consisting of a start tag, content, and an optional end tag. A tag is the part of an element that defines its type, such as <h1> (header)  or <a> (link). An attribute provides more  information about an HTML element. For example, in the <a> tag <a href="https://example.com">Link</a>, the href attribute tells the browser the website address the link should go to when clicked.
+ 
+                                      
+  
+4. What does it mean when an element has semantic meaning? And structural meaning?
+Semantic elements show the meaning of the content inside them, like <strong> which marks important text, while structural elements just help organize the content without adding meaning, like <div> which groups things together. For example, <strong> makes text bold and shows it’s important, while <b> only makes the text bold without extra meaning.
+ 
+ 
+ 5. What is the default behavior when submitting a HTML form?
+                    
+When submitting a HTML form, the data you filled out is sent to a server through a URL in the action attribute. The form uses the GET or POST method to send the information. After submission, the page usually reloads or redirects to a new URL. If no URL is provided in the action attribute, the form data is sent to the same page.
+ 
+ 
+6. Create a webpage for a fake business of your choosing. It should have: a. an h1 element with the title of the business
+b. a p element with a description of the business
+c. a subsection with a sub heading and p element describing that section d. create an images directory and put a relevant image in the directory, include that image on the webpage via a src attribute with a relative path.
+e. a contact form which should have:
+i. a text input element for first name with a label
+ii. a text input element for last name with a label
