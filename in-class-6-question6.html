@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+
+        <title>css grid</title>
+
+    </head>
+
+
+
+        <style>
+
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: repeat(4, 100px);
+            gap: 5px;
+            background-color: rgba(238, 235, 235, 0.089);
+            width: 420px;
+        }
+
+            .grid-item-1 {
+                grid-row-start: 1;
+                grid-row-end: 5;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                background-color: blue;
+            }
+
+            .grid-item-2 {
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                grid-column-end: 5;
+                background-color: green;
+
+                
+            }
+
+            
+
+            .grid-item {
+                color: rgba(255, 255, 255, 0.05)
+            }
+
+
+        </style>
+
+    </body>
+
+    <body>
+        <div class="grid-container">
+            <div class="grid-item-1">div1</div>
+            <div class="grid-item-2">div2</div>
+        </div>
+
+</html>
