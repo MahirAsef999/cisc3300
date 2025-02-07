@@ -1,0 +1,37 @@
+﻿CISC 3300 SP25 
+Homework 2 
+1. What do the id and class attributes do? How are they alike and different? 
+The id attribute is used to uniquely identify a single element on a webpage, meaning no two elements should have the same id. The class attribute, on the other hand, allows multiple elements to share the same class, making it useful for applying the same styles or behaviors to groups of elements. Both id and class attributes can be referenced in CSS for styling and in JavaScript for manipulation, but id is more specific and meant for one element, while class is reusable across multiple elements.
+
+
+2. What are the parts of a CSS rule?
+A CSS rule contains two parts: a selector and a declaration.The selector is used to find or select the HTML elements I want to style and the declaration defines the style properties to apply to the selected elements.
+
+
+3. Explain how CSS rules cascade. 
+When multiple CSS rules apply to the same element, it's important to determine which one will take precedence. First, the important keyword will override any other rule, no matter the specificity or order of the rule. Second, if there are two or more rules targeting the same element, the rule with the more specific selector (such as an ID) will take priority over less specific ones (like classes or tags). Third, properties can be inherited from parent elements to child elements unless explicitly changed. Lastly, if two rules have the same level of specificity, the one that appears last in the stylesheet will be applied. In summary, the most specific rule or the last one listed takes priority, with !important overriding all.
+
+
+4. Contrast display: block, inline, inline-block. 
+
+
+Display: block means when a block element takes up the full width available and always starts on a new line and pushes the subsequent elements down.  Display:incline makes an element only take up as much width as its content, and it doesn't start on a new line - it stays in line with other elements. Display:inline-block combines characteristics of both in the sense that it allows elements to stay in line with other elements like incline elements but it also respects the width and height properties like block elements, meaning you can control its size while keeping it in line with other elements. This makes it useful for items that need to be styled like blocks but still appear next to other elements.
+
+
+
+
+
+
+5. What are border, padding, and margin? 
+
+
+Border is the outer edge of an element that can be styled with different colors, widths, and patterns such as solid or dashed lines. Padding is the space between an element’s content and its border - it allows you to specify how much space should appear between the content of an element and its border. Margin is the empty space outside an element’s border that creates distance between it and other elements. 
+
+
+
+
+6. Let’s improve our fake business webpage from the first homework: 
+a. Make a full width header div with a centered row of links and a border. The links can route to ‘#’. Give the header a background color and the links a foreground color. 
+b. Create a logo with a fancy font from google fonts and some color. And set a google font for the text of the rest of your webpage. 
+c. Every item on the page should have adequate margin/padding. 
+d. Try to think about the usability principles we have discussed in class; try to make the design choices increase the usability of the page.
