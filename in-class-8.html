@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Class 8</title>
+</head>
+<body>
+    <h1>OPEN CONSOLE</h1>
+    <h2> This is a test case for in-class 8.</h2>
+    <h3>Java Language for the win!!</h3>
+    <script>
+        let strNum = "5" + 10;
+        console.log("'5' + 10 results in:", strNum);
+        console.log("Explaining the output: When a string is added to a number using +, JavaScript converts the number into a string and does not do numeric addition, but rather combines the number '5' to the string '10'.");
+
+        let numTrue = Number(true);
+        let numFalse = Number(false);
+        console.log("Number(true) results in:", numTrue);
+        console.log("Number(false) results in:", numFalse);
+        console.log("Explaining the output: True is converted to 1 and false is converted to 0 when using Number().");
+
+        let boolOne = Boolean(1);
+        let boolZero = Boolean(0);
+        let boolStringZero = Boolean("0");
+        console.log("Boolean(1) results in:", boolOne);
+        console.log("Boolean(0) results in:", boolZero);
+        console.log("Boolean('0') results in:", boolStringZero);
+        console.log("Explaining the output: Boolean(1) returns true because any non-zero number is true. Boolean(0) returns false because 0 is false. Boolean('0') returns true because any non-empty string (even '0') is true.");
+    </script>
+</body>
+</html>
