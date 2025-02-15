@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fordham Computer Science</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Raleway, sans-serif;
+            font-size: 16px;
+        }
+        .header {
+            background-color: #7d0d22;
+            color: white;
+            padding: 15px;
+        }
+        .navbar {
+            background-color: #333;
+            padding-left: 0; 
+        }
+        .navbar .nav {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .section-nav_link {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-family: Raleway, sans-serif;
+            padding: 10.4px 8px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .highlight-box {
+            background-color: #7d0d22;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .accordion-button {
+            background-color: #7d0d22 !important;
+            color: white !important;
+            padding: 20px; 
+}
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+        }
+        .sidebar .menu-item {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: left;
+            font-weight: normal;
+            border-left: 3px solid #7d0d22;
+        }
+        h1 {
+            font-size: 50px;
+            font-family: Raleway, sans-serif;
+            color: #900028;
+            margin: 32px 0px;
+            width: 779px;
+            height: 60px;
+            font-weight: normal;
+        }
+        p.body-lead-font {
+            font-size: 20px;
+            font-family: Raleway, sans-serif;
+            color: #333333;
+            margin: 0px 0px 20px;
+            width: 779px;
+            height: 60px;
+        }
+        .dropdown-menu {
+            background-color: #333; 
+        }
+        .dropdown-item {
+            color: white !important;
+        }
+        .dropdown-item:hover {
+            background-color: #7d0d22 !important;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        FORDHAM UNIVERSITY
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="nav">
+            
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="whyFordhamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Why Fordham
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="whyFordhamDropdown">
+                    <li><a class="dropdown-item" href="#">Finding Your Academic Home at Fordham</a></li>
+                    <li><a class="dropdown-item" href="#">Finding Your Community at Fordham</a></li>
+                    <li><a class="dropdown-item" href="#">New York is My Campus</a></li>
+                    <li><a class="dropdown-item" href="#">A Jesuit Education</a></li>
+                    <li><a class="dropdown-item" href="#">Sustainability at Fordham</a></li>
+                    <li><a class="dropdown-item" href="#">Admissions and Diversity</a></li>
+                    <li><a class="dropdown-item" href="#">Admission Facts</a></li>
+                    <li><a class="dropdown-item" href="#">Understanding the Financial Aid Process at Fordham</a></li>
+                </ul>
+            </div>
+
+
+           
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="majorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Majors and Minors
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="majorsDropdown">
+                    <li><a class="dropdown-item" href="#">What’s Your Passion?</a></li>
+                    <li><a class="dropdown-item" href="#">Accelerated Degree Programs</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Choose Your Campus Dropdown -->
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="campusDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose Your Campus
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="campusDropdown">
+                    <li><a class="dropdown-item" href="#">Lincoln Center</a></li>
+                    <li><a class="dropdown-item" href="#">Rose Hill</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Outcomes Dropdown -->
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="outcomesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Outcomes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="outcomesDropdown">
+                    <li><a class="dropdown-item" href="#">Leading Industries Statistics</a></li>
+                    <li><a class="dropdown-item" href="#">Top Hiring Employers Statistics</a></li>
+                    <li><a class="dropdown-item" href="#">Public Service Statistics</a></li>
+                    <li><a class="dropdown-item" href="#">Fordham Internship Promise</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Visit Dropdown -->
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="visitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Visit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="visitDropdown">
+                    <li><a class="dropdown-item" href="#">On-Campus Visit Options</a></li>
+                    <li><a class="dropdown-item" href="#">Information Session with Tour</a></li>
+                    <li><a class="dropdown-item" href="#">Guided Tour</a></li>
+                    <li><a class="dropdown-item" href="#">Virtual Visit Options</a></li>
+                    <li><a class="dropdown-item" href="#">Virtual Tour</a></li>
+                    <li><a class="dropdown-item" href="#">Group Tour Visit Options</a></li>
+                    <li><a class="dropdown-item" href="#">Counselor Visit Options</a></li>
+                    <li><a class="dropdown-item" href="#">Self-Guided Walking Tours</a></li>
+                    <li><a class="dropdown-item" href="#">Virtual Ram Sessions Library</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Apply Dropdown -->
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="applyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Apply
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="applyDropdown">
+                    <li><a class="dropdown-item" href="#">How to Apply</a></li>
+                    <li><a class="dropdown-item" href="#">Dates and Deadlines</a></li>
+                    <li><a class="dropdown-item" href="#">Admission Facts</a></li>
+                    <li><a class="dropdown-item" href="#">What We’re Looking For</a></li>
+                    <li><a class="dropdown-item" href="#">Transfer Credits (AP/IB)</a></li>
+                    <li><a class="dropdown-item" href="#">COVID-19 Impact</a></li>
+                    <li><a class="dropdown-item" href="#">Costs and the Return on Your Investment</a></li>
+                    <li><a class="dropdown-item" href="#">Financial Aid</a></li>
+                    <li><a class="dropdown-item" href="#">Scholarships and Grants</a></li>
+                    <li><a class="dropdown-item" href="#">Summer Programs for High School Students</a></li>
+                    <li><a class="dropdown-item" href="#">Virtual Ram Sessions Library</a></li>
+                </ul>
+            </div>
+
+
+            <!-- International Students Dropdown -->
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="internationalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    International Students
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="internationalDropdown">
+                    <li><a class="dropdown-item" href="#">International Transfer Students</a></li>
+                    <li><a class="dropdown-item" href="#">Visiting International Students</a></li>
+                    <li><a class="dropdown-item" href="#">International FAQs</a></li>
+                    <li><a class="dropdown-item" href="#">Global Visit Schedule</a></li>
+                    <li><a class="dropdown-item" href="#">Visa Process</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Transfer Students Dropdown -->
+            <div class="dropdown">
+                <a class="section-nav_link dropdown-toggle" href="#" id="transferDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Transfer Students
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="transferDropdown">
+                    <li><a class="dropdown-item" href="#">How to Apply</a></li>
+                    <li><a class="dropdown-item" href="#">Transfer Credit</a></li>
+                    <li><a class="dropdown-item" href="#">Costs and Financing Options</a></li>
+                    <li><a class="dropdown-item" href="#">Scholarships and Financial Aid</a></li>
+                    <li><a class="dropdown-item" href="#">International Transfer Students</a></li>
+                    <li><a class="dropdown-item" href="#">Visiting Students</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Us Link -->
+            <a href="#" class="section-nav_link">Contact Us</a>
+        </div>
+    </nav>
+</body>
+
+<aside class="col-md-3 sidebar">
+    <h5>Majors and Minors</h5>
+    <div class="menu-item">What's Your Passion?</div>
+    <div class="menu-item">Accelerated Degree Programs</div>
+    <div class="menu-item" style="font-weight: bold; color: #7d0d22;">Majors and Minors</div>
+</aside>
+
+<div class="col-md-9 content">
+    <h1>Computer Science</h1>
+    <p><strong>Degree Options:</strong> Major, Minor</p>
+    <p><strong>Locations:</strong> Lincoln Center, Rose Hill</p>
+    <p><a href="#" class="text-danger">Visit the Computer and Information Science Department</a></p>
+    <p class="body-lead-font">Wherever there’s a computer, there’s a skilled person developing, maintaining, hacking, advancing or simply using it. Be that person.</p>
+    <p>It’s difficult to imagine life without computers when they’re so central to our information-driven global society. But it’s not difficult to imagine the amazing pursuits you’ll be prepared for with a degree in computer science from Fordham’s department of Computer and Information Sciences. </p>
+    <p>The computer science major emphasizes science and technology, including software design and programming, computer architecture and functions, and the development of an ability to analyze and solve problems in using the computer as a tool.</p>
+    <p>Get inspired by the classes we offer. Programming. Bioinformatics. Robotics. Video game design. Cyber security. Networking. Database management. Health and medical informatics.</p>
+    <p>Our faculty members are active researchers driven by intellectual curiosity and the desire to make an impact. Join them in one of our labs. Requirements: open mind, warm heart, and lots of passion.</p>
+    <p>You’ll learn more than computer science here. You’ll also study philosophy, theology, history, mathematics, languages, and the performing arts through Fordham’s common core curriculum, the centerpiece of our liberal arts education. We want you to excel in your field—and as a human being.</p>
+   
+    <img src="https://via.placeholder.com/300" alt="Circuit Board" class="img-fluid">
+    <p>The computer science major emphasizes science and technology, including software design and programming...</p>
+    <div class="accordion" id="csAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#highlight1">
+                    Program Highlights
+                </button>
+            </h2>
+            <div id="highlight1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>The department of Computer Information Systems is a dynamic and vibrant place, with a faculty of well-respected scholars who are equally committed to teaching and research.</p>
+
+                    <p>The BS in computer science differs from the BA in that it requires classes in machine learning, knowledge discovery, and data mining.</p>
+        
+                    <p><strong>Special programs include:</strong></p>
+                    <ul>
+                        <li>Interdisciplinary degree in information systems through Fordham’s School of Professional and Continuing Studies (PCS)</li>
+                        <li>3-2 program for students studying engineering and computer science</li>
+                        <li>Five-year master’s degree</li>
+                        <li>Research Labs</li>
+                    </ul>
+        
+                    <p>Informatics and Data Mining Lab conducts research in the emerging fields of computational intelligence and informatics related to: </p>
+                    <ul>
+                        
+                            <ul>
+                                <li>Bioinformatics, brain informatics, cognitive informatics, and neuroinformatics</li>
+                                <li>Financial computing and informatics</li>
+                                <li>Business analytics and business intelligence</li>
+                                <li>Combinatorial fusion analysis</li>
+                            </ul>
+                        </li>
+                        <p> </p>
+                        <p>Robotics and Computer Vision Lab: Investigates the frontiers of robotics, including developing software to build robot systems for defense, visual homing systems inspired by ants and bees, and fusing data from a team of robots on a search-and-rescue mission. </p>
+                        <p>  </p>
+                        <p>WISDM (Wireless Sensor Data Mining) Lab: Collects, mines, and analyzes sensor data from smartphones and other mobile devices using activity recognition, biometric identification, and trait recognition. The lab is supported by NSF funding and has received a Google Faculty Research Award.</p>>
+                    </ul>
+        
+                    <p><strong>Study Abroad:</strong> 
+                    
+                    <p>  Study abroad enriches you academically, culturally, and personally. There is a whole globe of study abroad possibilities available through Fordham’s International and Study Abroad Program.</p>   
+        
+                    <p><strong>Internships:</strong> 
+                    
+                    <p> We connect you to internships at leading organizations in the private and public sectors, including:</p>    
+                    <ul>
+                        <li>IBM</li>
+                        <li>Philips</li>
+                        <li>Charney Research</li>
+                        <li>Key Digital</li>
+                        <li>Microsoft</li>
+                        <li>Consumer Financial Protection Bureau</li>
+                        <li>Oak Ridge National Laboratory</li>
+                        <li>MIT Lincoln Laboratory</li>
+                        <li>SiriusFM</li>
+                        <li>Fox News</li>
+                    </ul>
+                    Fordham’s Career Services offers CareerLink, a database of thousands of job and internship opportunities exclusively for Fordham students.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#highlight2">
+                    Sample Courses
+                </button>
+            </h2>
+            <div id="highlight2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Get inspired by the classes we offer:
+                    <ul>
+                        <li>Discrete Structures</li>
+                        <li>Data Structures</li>
+                        <li>Operating Systems</li>
+                        <li>Theory of Computation</li>
+                        <li>Data Communications and Networks</li>
+                        <li>Intro to Video Game Design</li>
+                        <li>Brains and Behaviors in Beasts and Bots</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Life After Fordham Section as Accordion -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#highlight3">
+                    Life After Fordham
+                </button>
+            </h2>
+            <div id="highlight3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    
+                    <p>Wherever you find a computer system, you’ll find a person responsible for developing, maintaining, hacking, advancing or simply using it. </p>
+                    <p> </p>
+                    <p>You graduate from our program prepared for a career or advanced study in computer science, information technology, system design, telecommunications, computer applications and much more. </p>
+                    <p> </p>
+                    
+                    <p>We connect you with employers looking for:</p>
+                    <ul>
+                        <li>Software developers</li>
+                        <li>Programmers</li>
+                        <li>UX designers</li>
+                        <li>Data scientists</li>
+                        <li>Cybersecurity engineers</li>
+                        <li>Web designers</li>
+                    </ul>
+        
+                    Our career services tap Fordham’s ties with more than 2,600 companies. We offer:
+                    <ul>
+                        <li>Postgraduation career search</li>
+                        <li>Resume development, interviewing practice</li>
+                        <li>Networking skill development</li>
+                        <li>Hands-on case-study sessions with industry executives</li>
+                        <li>Field-specific advising/coaching</li>
+                    </ul>
+        
+                    You also get access to our powerful (and Fordham-loyal) network of alumni, who want to see you succeed as they have.
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+</html>
+
+
