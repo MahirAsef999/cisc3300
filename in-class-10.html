@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+    <style>
+        #myDiv {
+            padding: 20px;
+            border: 1px solid black;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" onclick="changeText()">initial text</div>
+
+    <script>
+        function changeText() {
+            let div = document.getElementById("myDiv");
+            div.textContent = "added text!";
+            div.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
