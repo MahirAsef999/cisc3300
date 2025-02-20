@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in-class-11</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <button id="fetchData">Get Data</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#fetchData").click(function () {
+                $.get("in-class-11-backend.php", function (response) {
+                    console.log(response); 
+                }, "json"); 
+            });
+        });
+    </script>
+
+</body>
+</html>
