@@ -1,0 +1,49 @@
+﻿CISC 3300 S25 
+Homework 4 
+1. How does an interpreted programming language differ from a compiled language? 
+An interpreted programming language is different from a compiled language because an interpreted language executes code line by line by an interpreter which makes it more flexible but also slower - examples of an interpreted programming language would be JavaScript and Python. On the other hand a compiled language translate the entire code into machine code before it executes the code, which means it has a faster performance but it requires recompilation after changes. Examples of compiled languages would be C and C++.
+2. Contrast dynamically typed programming languages with statically typed ones. And contrast strongly typed programming languages with weakly typed ones. 
+In a dynamically typed programming language, variables do not have fixed types and can change at run time while for statistically typed programming language, variable types are determined at compile time and cannot change - variable if fixed. Examples of dynamically typed programming language would be languages like Python and JavaScript while example of a statically typed programming language would be C. Strongly Typed programming language enforces strict type rules and does not allow implicit type conversions, for example, attempting to add a string and an integer in a strongly typed programming language would result in an error. On the other hand a weakly typed programming language will allow an implicit type conversion.  Strongly Typed Language can be Python while Weakly Typed Language would be PHP. 
+
+
+
+
+3. What is the difference between var, let, and const when declaring variables in JS? 
+In JavaScript, var, let, and const are used to declare variables, but they work in different ways. var is function-scoped, which means it can be used anywhere within the function it's declared in, and it can be accessed before its declaration because it's hoisted. Var can also be redeclared in the same scope. On the other hand, let is block-scoped, which means it is only available within the block (like inside a loop or an if statement) where it is defined. It is not hoisted like var, and it cannot be redeclared in the same scope. Lastly, const is also block-scoped, but it must be initialized when you declare it, and you cannot change its value afterward - it cannot be reassigned. This makes const useful for values that should stay the same throughout the block. These differences help you manage variable usage and avoid issues in your code.
+
+
+4. What are anonymous functions? Higher order functions? Callback functions? First class functions? 
+An anonymous function is a function without a name and it is often used as an argument or assigned to a variable (examples are function() {} or () => {}). A higher-order function is a function that either takes another function as an argument or returns a function (examples of this are map(), filter()). A callback function is a function passed as an argument to another function and executed later (examples of a callback function are setTimeout(() => console.log("Hello"), 1000)). A first-class function is any function that can be treated like a variable, meaning it can be assigned to variables, passed as arguments, or returned from other functions.
+
+
+
+
+5. Define objects in JavaScript. 
+
+
+In JavaScript, an object is a collection of key-value pairs used to store properties and methods. Objects are fundamental in JavaScript and are essential for structuring data. For example in the following code:
+---------------------------------------------------------------------------------------------------------------
+let person = { 
+  name: "Mahir", 
+  age: 20, 
+  greet: function() { console.log("Hello!"); } 
+};
+---------------------------------------------------------------------------------------------------------------
+
+
+In this example, the object person has properties (name (Mahir) and age (20)) that hold data and a method (greet (Hello!)) that prints a message when called. This structure allows you to group related information and behaviors together, making it easier to manage and manipulate data in your programs.
+
+
+6. Loop through the cats array variable found here: 
+https://github.com/cisc3300/SP25-lecture-code/blob/main/2-13-lecture/cats.js a. if the cats adoption status is available add that cat’s name to a result array b. create a new sentence about your newly adopted cats from your result array via the join array function. 
+
+7. Create a variable that sets a value via a ternary operator. Use Math.random() * 10, which will output a random number from 1 to 10, to set the variable’s value as a string of “greater than five!” if the output from Math.random() * 10 is greater than 5, and “less than five!” if the output is less than 5. 
+
+8. Loop through the values of the cat object variable found here: 
+https://github.com/cisc3300/SP25-lecture-code/blob/main/2-13-lecture/cats.js.. Console.log the value of each property in the loop. 
+
+9. Write two if statements, pick the correct comparison operator to have the first if statement equate an integer of 1 and a string of ‘1’ as true. And pick the correct comparison operator to have the second equate an integer of 1 and a string of ‘1’ as false. 
+
+10. Using the map function create a new array via the cats array used in question 6. Pass the map function a callback function that accepts each element of the array as a parameter. Return the value of the name property of each object in the cats array concatenated with the string “ is cute!”. The output should be an array of “Charlie is cute!”, “Lily is cute!”, etc. 
+
+Include questions 6-10 in a single JavaScript file or HTML file via a script tag.
