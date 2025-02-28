@@ -1,0 +1,40 @@
+{
+    "students": [
+      {
+        "student_id": 1001,
+        "name": "Mahir Asef",
+        "major": "Computer Science",
+        "gpa": 3.3,
+        "year": "Junior"
+      },
+      {
+        "student_id": 1002,
+        "name": "Ashley Garcia",
+        "major": "Mechanical Engineering",
+        "gpa": 3.5,
+        "year": "Freshman"
+      },
+      {
+        "student_id": 1003,
+        "name": "Bob Marley",
+        "major": "Business Administration",
+        "gpa": 3.2,
+        "year": "Sophomore"
+      },
+      {
+        "student_id": 1004,
+        "name": "Dana White",
+        "major": "Biology",
+        "gpa": 2.9,
+        "year": "Senior"
+      },
+      {
+        "student_id": 1005,
+        "name": "Alex Rodriguez",
+        "major": "Physics",
+        "gpa": 3.7,
+        "year": "Junior"
+      }
+    ]
+  }
+  

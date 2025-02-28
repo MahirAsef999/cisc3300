@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li style="background-color: red;" onclick="changeColor(this)">Item 1</li>
+        <li style="background-color: blue;" onclick="changeColor(this)">Item 2</li>
+        <li style="background-color: green;" onclick="changeColor(this)">Item 3</li>
+        <li style="background-color: orange;" onclick="changeColor(this)">Item 4</li>
+        <li style="background-color: purple;" onclick="changeColor(this)">Item 5</li>
+    </ul>
+
+    <script>
+        function changeColor(element) {
+            element.style.backgroundColor = element.style.backgroundColor === 'gray' ? element.dataset.originalColor : 'gray';
+        }
+        document.querySelectorAll("li").forEach(item => {
+            item.dataset.originalColor = item.style.backgroundColor;
+        });
+    </script>
+</body>
+</html>
