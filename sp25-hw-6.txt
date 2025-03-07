@@ -1,0 +1,39 @@
+﻿CISC 3300 S25 
+Homework 6 
+1. Define hoisting and closures in JS. 
+Hoisting in JavaScript is the process where variable and function declarations are moved to the top of their scope before code execution. This means you can use a function or variable before declaring it in the code. However, only function declarations are fully hoisted, whereas variables declared with var are hoisted but initialized as undefined. Closures occur when an inner function retains access to the variables of its outer function even after the outer function has executed. This allows JavaScript to create private variables and maintain state across function calls.
+
+
+2. What is PHP? What do server side languages do in web development?
+PHP is a server-side scripting language primarily used for web development to generate dynamic web pages. It runs on the server, processes user requests, and interacts with databases to provide content dynamically. Server-side languages like PHP handle tasks such as user authentication, session management, and file handling. Unlike JavaScript, which runs in the browser, PHP executes on the server and sends the final HTML to the client. This enables web applications to be more secure and scalable by handling logic on the backend.
+
+
+3. What are some examples of how the PHP and JavaScript programming languages are alike and how they differ? 
+
+
+PHP and JavaScript share similarities, such as being widely used in web development and supporting object-oriented and functional programming paradigms. Both languages can manipulate HTML and process user input, making them essential for interactive websites. However, PHP is a server-side language that processes logic before sending data to the client, whereas JavaScript is mainly a client-side language that runs in the user’s browser. While JavaScript can now run on the server with Node.js, PHP remains more optimized for traditional web development. PHP has built-in web features, while JavaScript is more versatile for both front-end and backend development.
+
+
+4. Why pick PHP over another server side scripting language like Python or Node? 
+PHP is specifically designed for web development, making it an efficient choice for building websites and web applications. It has built-in functions for handling databases, working with HTML, and managing user input, which reduces development time. Unlike Python, which is a general-purpose language, PHP is optimized for web tasks and has better support from web hosting services. Compared to Node.js, PHP uses a synchronous execution model, making debugging and maintenance simpler. While Node.js is better for real-time applications, PHP remains a strong choice for traditional web applications and CMS platforms like WordPress.
+
+
+5. Compare and contrast echo and var_dump. 
+The echo statement in PHP is used to output text or simple variables onto a web page, making it a basic way to display content. It is commonly used to print strings, numbers, or HTML elements directly in a script. On the other hand, var_dump provides detailed information about a variable, including its data type and value. This makes var_dump useful for debugging, as it helps developers inspect complex data structures like arrays and objects. While echo is meant for displaying content, var_dump is mainly used for debugging and analyzing variables.
+
+
+
+
+6. Create a new PHP project, in the index.php file create: 
+a. An associative array with keys and values. 
+b. Loop through the array and echo out a string that contains each key and value. 7. Add to question 6: 
+a. Create a function that has: 
+i. a set return type 
+ii. an optional parameter 
+iii. a typed parameter 
+iv. and call your function with values that have the correct data types 
+
+
+
+
+8. Create another PHP project that includes a “resources” directory. In the resources directory create an HTML file that has elements to show an image, also place an image in the resources directory. When the domain is accessed in a browser(localhost), return the HTML page with the working image.
