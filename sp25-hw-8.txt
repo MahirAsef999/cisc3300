@@ -1,0 +1,53 @@
+﻿CISC 3300 S25 
+Homework 8 
+
+1. What are sessions and cookies? What do they do? 
+
+Sessions and cookies are both ways to store information about a user while they are interacting with a website. A session stores data on the server side while the user is actively using the website. It’s often used to remember things like login status or preferences, so the website can recognize the user between different pages. Sessions are active as long as the user is on the website or until they expire. A cookie is a small piece of data stored on the user’s browser by the website. Cookies are used to keep track of things like login credentials or to gather data for tracking. Unlike sessions, cookies are stored on the user’s device and can last beyond a single visit to the website, staying there until they expire. Both sessions and cookies play crucial roles in improving the user experience by remembering important information, such as user preferences or authentication details.
+
+
+2. What is SQL? MySQL? What are relational databases? 
+
+SQL (Structured Query Language) is a programming language used to manage and interact with relational databases. It allows users to query data, update records, insert new data, and delete existing data. SQL is a standard language for working with data stored in structured tables. MySQL is an open-source database management system that uses SQL to manage databases. It is commonly used for web applications due to its reliability, performance, and support for multiple users and concurrent access. Relational databases store data in tables, with rows and columns, and use relationships between these tables to manage and organize the data. Each table has data that is related to other tables in a structured way, and SQL is used to interact with these tables.
+
+3. What is normalization in SQL? 
+
+Normalization in SQL refers to the process of organizing data within a relational database to minimize redundancy and ensure data integrity. The purpose of normalization is to make sure the data is stored efficiently without repeating information unnecessarily. This process involves breaking down large tables into smaller ones and linking them together using relationships. Normalization is achieved through a set of rules known as normal forms, which progressively improve the database design. First Normal Form (1NF) makes sure each column has only one value (no lists or multiple values in one column). Second Normal Form (2NF) ensures all non-key data depends on the primary key. Third Normal Form (3NF) removes unnecessary dependencies between non-key data. The overall goal of normalization is to create a well-organized database that is free from redundancy, promoting efficiency, and reduces the risk of errors in the data.
+
+
+4. What are primary and foreign keys? 
+
+A primary key is a unique identifier for each record in a table. It makes sure that each record can be easily distinguished from others, and no two records can have the same primary key value. A primary key must be unique and cannot have empty values, which helps keep the data accurate by preventing duplicates. For example, in a table of students, the student_id field can be the primary key to identify each student uniquely. A foreign key, on the other hand, is a field in one table that links to the primary key in another table. It creates a connection between the two tables. A foreign key points to the primary key in another table, which helps ensure that the relationship between the tables is correct and consistent. For example, a courses table might have a student_id foreign key that points to the student_id in the students table, showing which student is enrolled in which course. Foreign keys help keep data organized and ensure that the relationships between tables make sense.
+
+
+
+
+5. Write statements to: 
+a. create a new database in phpmyadmin (or use the one from the in class assignment) 
+b. create a notes table, include the following columns: 
+i. id, which should be an integer type, have space for 11 characters, not be nullable, and auto increment, set the id column as the primary key 
+ii. title, which should be an varchar type, have space for 80 characters, and not be nullable 
+iii. description, which should be an text type, not be nullable 
+6. Write statements to 
+a. insert some data 
+b. update some data 
+c. delete some data 
+7. Write queries to 
+a. select all notes and order them by name in reverse alphabetical order 
+b. select the second note in the table only, assume that you don’t know the ID number of it 
+c. select all notes that have descriptions which contain vowels 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Include SQL statements from questions 5-7 in a sql file in your submission.
